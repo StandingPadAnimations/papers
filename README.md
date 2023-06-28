@@ -1,4 +1,4 @@
-This is a collection of all of my papers that I've written with https://github.com/typst/typst. Each folder has the source files for a single paper
+This is a collection of all of my papers that I've written with https://github.com/typst/typst. Each folder has the source files for a single paper as well as their built PDFs.
 
 To build a paper, open a terminal and go into the source folder of the paper in question, then type:
 ```sh
