@@ -28,7 +28,7 @@ Given a block $B$ with the dimensions $1m * 2m * 3m$ (where $m$ is meters) and a
 $ F_A = 1 * 3       $
 $ B_V = F_A * 2     $
 $ B_V = (1 * 3) * 2 $
-$ d = 2             $
+$ d = B_V / F_A = 2 $
 
 Where $d$ is the depth.
 
@@ -41,7 +41,7 @@ Let's move on to the algorithm.
 Now that we've covered some basics, we can now move on to the algorithm.
 == Cubic Blocks
 Given the dimensions $l$, $w$, and $h$, a target material $M$, a face $F_alpha$ with material $M$, and the normal of $F_alpha$ (called $n_alpha$), we can do the following:
-1. Take the dimensions of $F_alpha$ and compare them to the given dimensions $l$, $w$, and $h$. The dimension not represented in those 3 shall be $d$.
+1. Let $d = B_V / A_alpha$, where $B_V = l * w * h$ and $A_alpha$ is the area of $F_alpha$.
 2. Find a face $F_beta$ that is $d$ away, opposite of $n_alpha$. If $F_beta$ exists, then its normal shall be $n_beta$ and the material it has shall be $M_beta$. If $F_beta$ does not exist, move on to Step 4.
 3. Provided $F_beta$ exists, it is part of the same block as $F_alpha$ if the following are true:
 $ n_beta = -n_alpha $
@@ -61,6 +61,6 @@ $ M_beta = M $
 3. Let $I$ be the line formed by the intersection of $F_alpha$ and $F_beta$, as per the _Plane Intersection Postulate_, and let $G$ be a stright line parallel to the top of the OBJ. If the following is true, then the blocked formed by $F_alpha$ and $F_beta$ is stright:
 $ I perp G $
 
-Otherwise, the blocked formed by $F_alpha$ and $F_beta$ is not stright.
+Otherwise, the block formed by $F_alpha$ and $F_beta$ is not stright.
 
 4. With both faces and $I$, let the origin be at the vertex formed by the intersection of the bottom edges of $F_alpha$ and $F_beta$, and let the rotation of the vertex be the rotation of $I$.
