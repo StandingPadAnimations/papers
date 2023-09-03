@@ -7,7 +7,10 @@ So if we pretend for a moment that $n/0 = infinity$, then the following is true 
 $ n / 0 = infinity $
 $ infinity * 0 = n $
 
-However, a fundemental rule in multiplication is that anything times $0$ is $0$ (as you have 0 groups of $n$), so $infinity * 0 eq.not n$, thus proving that anything divided by $0$ is not infinity.
+However, a fundemental rule in multiplication is that anything times $0$ is $0$, due to the following:
+$ n * 0 = sum_(k=0)^n 0 = 0 $
+
+So $infinity * 0 eq.not n$, thus proving that anything divided by $0$ is not infinity.
 
 = Proving $0/0$ is undefined
 Let $alpha = 1 * 0$ and $beta = 2 * 0$. As anything times $0$ is $0$, $alpha = beta$. Now let's set up the following equation:
