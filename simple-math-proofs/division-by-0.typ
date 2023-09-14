@@ -1,5 +1,12 @@
-= Proving $n/0$ is not $infinity$
-The inverse of division is multiplication, so:
+= A Basic Concept First
+Multiplication is defined as follows:
+$ a * b = sum_(c=1)^a b $
+
+Such that $a * b$ is equivilent to the following:
+$ underbrace(b + b + ... + b, a "times") $
+
+= Explaining Why $n/0$ is not $infinity$
+The inverse of division is multiplication, such as the following:
 $ 6 / 2 = 3 $
 $ 3 * 2 = 6 $
 
@@ -8,28 +15,25 @@ $ n / 0 = infinity $
 $ infinity * 0 = n $
 
 However, a fundemental rule in multiplication is that anything times $0$ is $0$, due to the following:
-$ n * 0 = sum_(k=0)^n 0 = 0 $
+$ a * 0 = sum_(c=1)^a 0 = 0 $
 
 So $infinity * 0 eq.not n$, thus proving that anything divided by $0$ is not infinity.
 
-= Proving $0/0$ is undefined
-Let $alpha = 1 * 0$ and $beta = 2 * 0$. As anything times $0$ is $0$, $alpha = beta$. Now let's set up the following equation:
+= Explaining Why $0/0$ is undefined
+Let $n$ and $k$ be numbers such that $n eq.not k$, and let $alpha = n * 0$ and $beta = k * 0$. As anything times $0$ is $0$, $alpha = beta$. Now let's set up the following equation:
 $ alpha = beta $
 
 Expanded, this would be:
-$ 1 * 0 = 2 * 0 $
+$ n * 0 = k * 0 $
 
 So far so good. Now let's try dividing $0$ on both sides:
-$ (1 * 0) / 0 = (2 * 0) / 0 $
+$ (n * 0) / 0 = (k * 0) / 0 $
 
 If we pretend for a moment that $0/0$ is defined, then the following occurs:
-$ (1 * cancel(0)) / cancel(0) = (2 * cancel(0)) / cancel(0) $
+$ (n * cancel(0)) / cancel(0) = (k * cancel(0)) / cancel(0) $
 
 Leaving:
-$ 1 = 2 $
+$ n = k $
 
-For obvious reasons this is false, but just to prove it is false, if $1 = 2$, then the following can be concluded:
-$ 1 + 1 = 1 $
-$ 1 + cancel(1 + (-1)) = cancel(1 + (-1)) $
-$ 1 + 0 = 0 $
-$ 1 = 0 $
+However, $n$ and $k$ are defined such that $n eq.not k$, so division by $0$ is undefined.
+
