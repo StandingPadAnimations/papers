@@ -1,4 +1,4 @@
-#set text(size: 16pt, font: "IBM Plex Serif")
+#set text(size: 12pt, font: "IBM Plex Serif")
 #set par(justify: true)
 
 #align(center, text(25pt)[
